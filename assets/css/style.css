@@ -36,7 +36,7 @@ body {
     top: 0;
     left: 0;
     transition: 0.5s;
-    overflow: hidden;
+    overflow-x: hidden;
     white-space: nowrap;
 }
 
@@ -361,19 +361,17 @@ input:checked+.slider:before {
 
 .forecast-cards {
     width: 100%;
-    height: 100%;
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 21px;
+    margin-top: 5px;
 }
 
 .forecast-card {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    min-height: 225px;
     background-color: #F5F5F7;
     border-radius: 20px;
     padding: 15px 15px 15px 15px;
@@ -429,23 +427,17 @@ input:checked+.slider:before {
     text-transform: uppercase;
 }
 
-.hourly-subcontainer{
-    position: relative;
-}
-
 .hourly-cards {
-    position: relative;
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     gap: 20px;
     padding-left: 20px;
-    overflow: hidden;
+    overflow-x: auto;
 }
 
 .hourly-card {
-    height: 100%;
+    height: auto;
     background: #fff;
     padding: 15px;
     border-radius: 10px;
@@ -595,7 +587,7 @@ input:checked+.slider:before {
 }
 
 .active-time h3 {
-    font-size: 1.2em;
+    font-size: 1.6em;
     color: var(--primary-color);
     font-weight: 900;
 }
@@ -604,39 +596,4 @@ input:checked+.slider:before {
 
 .hourly-source h6 {
     color: var(--primary-color);
-}
-
-.btn-prev{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.btn-next{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.btn-prev button, .btn-next button{
-    background-color: var(--secondary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.6em;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    outline: none;
-    border: none;
-}
-
-.btn-prev{
-    top: 200px;
-}
-
-.btn-next{
-    top: 200px;
-    right: 0;
 }

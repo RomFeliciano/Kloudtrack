@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+
+    <style>
+        body{
+            background-color: rgb(12, 12, 32);
+        }
+        #locationImg{
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+        #userForm{
+            
+            margin:auto;
+            margin-top:100px;
+            height: fit-content;
+            width: 400px;
+            display: grid;
+            text-align: center;
+            align-content: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            
+        }
+
+        #locationImg{
+            filter:hue-rotate(6);
+            margin: auto;
+            
+
+
+        }
+
+        #MyLocation{
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+            margin: auto;
+            border: 1px solid black;
+
+        }
+
+        #SubmitButton{
+            width: 80px;
+            height: 40px;
+            border-radius: 10px;
+            margin: auto;
+            border: none;
+            cursor: pointer;
+            background-color: green;
+            color: rgb(238, 237, 237);
+            font-family:Arial, Helvetica, sans-serif
+
+
+
+        }
+
+        #outputDiv{
+            display: grid;
+            min-width: 500px;
+            min-height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            border:1px solid gray;
+            padding:10px;
+            /*display: none;*/
+            transition: width 2s, height 2s, transform 2s;
+            display: none;
+            
+        }
+
+        #outputHeader{
+            border-radius: 10px;
+            border:1px solid gray;
+            min-width: 200px;
+
+        }
+
+        #outputForecasts{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-column-gap: 5px;
+            align-content: center;
+        }
+
+        .forecastDiv{
+            border-radius: 10px;
+            border:1px solid black;
+            height: 300px; 
+            display: grid;
+            text-align: center;
+            align-content: center;
+            transition: width 2s, height 2s, transform 2s;
+            
+
+        }
+
+        .forecastIcon{
+            width: 100%;
+         
+        
+
+        }
+
+        .forecastResult{
+            width: 100%;
+          
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+        <div id="userForm"> 
+            <img src="../resources/location.png" id="locationImg">
+            <br/>
+
+            <input type="text" id="MyLocation" placeholder="My Location..."/> 
+
+            <br/>
+            <br/>
+            <input type="button" id="SubmitButton" onclick="fetchLocation()" value="Submit"/>
+        </div>
+        <br/> <br/>
+  
+
+    <div id="outputDiv"> 
+       
+        <div id="outputForecasts"> </div>
+    </div>
+    
+
+
+    <script src="test.js" defer></script>
+</body>
+</html>
