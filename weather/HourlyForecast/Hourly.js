@@ -77,6 +77,7 @@ function setDataToCards(data) {
     console.log("how many left: " + howmanyleft);
 
     if (howmanyleft < 4) {
+
         fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
         return 0;
     }
@@ -113,6 +114,8 @@ function setDataToCards(data) {
         hourlyWindText[cardNumber].innerText = data[startingPoint].Wind.Speed.Value;
         hourlyHumidityText[cardNumber].innerText = data[startingPoint].RainProbability;
         hourlyTime[cardNumber].innerText = forecasttime;
+        hourlyiconimg[cardNumber]
+
 
         cardNumber++;
         startingPoint++;
