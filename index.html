@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KloudTrack</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/modalSettings.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/59011f1b75.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt=""><span class="icon-text" style="color: #fff;">Kloud<span
+                    style="color: #fbd008;">Track</span></span>
+        </div>
+        <div class="side-lists">
+            <a href="#Home"><i class="fa-solid fa-house"></i><span class="icon-text">Dashboard</span></a>
+            <a href="#"><i class="fa-solid fa-chart-simple"></i><span class="icon-text">Chart</span></a>
+            <a href="#"><i class="fa-solid fa-location-dot"></i><span class="icon-text">Map</span></a>
+            <a href="#" onclick="popUpSettings();"><i class="fa-solid fa-gear"></i><span class="icon-text">Settings</span></a>
+        </div>
+        <div class="user-profile">
+            <div class="user">
+                <a href="#"><i class="fa-solid fa-user"></i><span class="icon-text">Profile</span></a>
+            </div>
+        </div>
+    </div>
+
+    <main id="Home">
+        <div class="main-container">
+            <div class="upper-buttons">
+                <div class="btn-left">
+                    <select name="" id="">
+                        <option value="">Balanga Bulbasaur, Bataan</option>
+                        <option value="">Abucay Ivysaur, Bataan</option>
+                        <option value="">Pilar Venasaur, Bataan</option>
+                    </select>
+                </div>
+                <div class="btn-right">
+                    <div class="toggle-convert">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider">
+                                <p class="slider-icon">&deg;C</p>
+                                <p class="slider-icon2">&deg;F</p>
+                        </label>
+                    </div>
+                    <div class="toggle-mode">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider">
+                                <p class="slider-icon">&deg;C</p>
+                                <p class="slider-icon2">&deg;F</p>
+                        </label>
+                    </div>
+                    <div class="help">
+                        <i class="fa-solid fa-circle-question" onclick="popUp();"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-forecast">
+                <div class="upper-left-forecast">
+                    <div class="upper-left-content">
+                        <div class="weather-today">
+                            <h1>Partly Sunny Day</h1>
+                        </div>
+                        <div class="weather-icon-degree">
+                            <div class="weather-icon">
+                                <img src="assets/img/Sunny.png" alt="Sunny">
+                            </div>
+                            <div class="weather-degree">
+                                <h1>32<sup>°</sup></h1>
+                            </div>
+                        </div>
+                        <div class="weather-text">
+                            <p>Expect partly sunny skies. The high will reach 34° on this humid day.</p>
+                        </div>
+                    </div>
+                    <div class="diamond">
+
+                    </div>
+                </div>
+                <div class="upper-right-forecast">
+                    <div class="forecast-title">
+                        <h1>Daily Forecast</h1>
+                    </div>
+                    <div class="forecast-cards">
+                        <div class="forecast-card">
+                            <div class="card-day">
+                                <h1>Tue</h1>
+                            </div>
+                            <div class="card-sun">
+                                <h1>32<sup>°</sup></h1>
+                            </div>
+                            <div class="card-moon">
+                                <h1>28<sup>°</sup></h1>
+                            </div>
+                            <div class="card-rain">
+                                <i class="fa-solid fa-droplet"></i>
+                                <h1>80%</h1>
+                            </div>
+                        </div>
+                        <div class="forecast-card">
+                            <div class="card-day">
+                                <h1>WED</h1>
+                            </div>
+                            <div class="card-sun">
+                                <h1>32<sup>°</sup></h1>
+                            </div>
+                            <div class="card-moon">
+                                <h1>28<sup>°</sup></h1>
+                            </div>
+                            <div class="card-rain">
+                                <i class="fa-solid fa-droplet"></i>
+                                <h1>80%</h1>
+                            </div>
+                        </div>
+                        <div class="forecast-card">
+                            <div class="card-day">
+                                <h1>THU</h1>
+                            </div>
+                            <div class="card-sun">
+                                <h1>32<sup>°</sup></h1>
+                            </div>
+                            <div class="card-moon">
+                                <h1>28<sup>°</sup></h1>
+                            </div>
+                            <div class="card-rain">
+                                <i class="fa-solid fa-droplet"></i>
+                                <h1>80%</h1>
+                            </div>
+                        </div>
+                        <div class="forecast-card">
+                            <div class="card-day">
+                                <h1>FRI</h1>
+                            </div>
+                            <div class="card-sun">
+                                <h1>32<sup>°</sup></h1>
+                            </div>
+                            <div class="card-moon">
+                                <h1>28<sup>°</sup></h1>
+                            </div>
+                            <div class="card-rain">
+                                <i class="fa-solid fa-droplet"></i>
+                                <h1>80%</h1>
+                            </div>
+                        </div>
+                        <div class="forecast-card">
+                            <div class="card-day">
+                                <h1>SAT</h1>
+                            </div>
+                            <div class="card-sun">
+                                <h1>32<sup>°</sup></h1>
+                            </div>
+                            <div class="card-moon">
+                                <h1>28<sup>°</sup></h1>
+                            </div>
+                            <div class="card-rain">
+                                <i class="fa-solid fa-droplet"></i>
+                                <h1>80%</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-forecast">
+                <div class="lower-title">
+                    <h1>Hourly Forecast</h1>
+                </div>
+                <div class="hourly-cards">
+                    <div class="hourly-card">
+                        <div class="hourly-icon">
+                            <img src="assets/img/Sunny.png" alt="">
+                        </div>
+                        <div class="hourly-degree">
+                            <h1>33<sup>°</sup></h1>
+                        </div>
+                        <div class="hourly-rain">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>0mm</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-wind">
+                            <div class="fa">
+                                <i class="fa-solid fa-location-arrow"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>15kph</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-humidity">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet-slash"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>61%</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-time">
+                            <h1>12PM</h1>
+                        </div>
+                    </div>
+                    <div class="hourly-card">
+                        <div class="hourly-icon">
+                            <img src="assets/img/Nighty.png" alt="">
+                        </div>
+                        <div class="hourly-degree">
+                            <h1>32<sup>°</sup></h1>
+                        </div>
+                        <div class="hourly-rain">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>0mm</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-wind">
+                            <div class="fa">
+                                <i class="fa-solid fa-location-arrow"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>15kph</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-humidity">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet-slash"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>61%</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-time">
+                            <h1>1PM</h1>
+                        </div>
+                    </div>
+                    <div class="hourly-card active">
+                        <div class="active-icon-degree">
+                            <div class="active-icon">
+                                <img src="assets/img/Nighty.png" alt="">
+                            </div>
+                            <div class="active-degree">
+                                <h1>32<sup>°</sup></h1>
+                            </div>
+                        </div>
+                        <div class="active-feels-precipitation">
+                            <div class="active-feels-like">
+                                <h6>feels like</h6>
+                                <h3>32<sup>°</sup></h3>
+                            </div>
+                            <div class="active-precipitation">
+                                <h6>precipitation</h6>
+                                <h3>0<sup>mm/hr</sup></h3>
+                            </div>
+                        </div>
+                        <div class="active-wind-humidity">
+                            <div class="active-wind">
+                                <h6>wind</h6>
+                                <h3>15<sup>kph </sup><i class="fa-solid fa-location-arrow"></i></h3>
+                            </div>
+                            <div class="active-humidity">
+                                <h6>humidity</h6>
+                                <h3>65<sup>%</sup></h3>
+                            </div>
+                        </div>
+                        <div class="active-pressure-uv">
+                            <div class="active-pressure">
+                                <h6>pressure</h6>
+                                <h3>1003<sup>mb</sup></h3>
+                            </div>
+                            <div class="active-uv">
+                                <h6>uv index</h6>
+                                <h3>7</h3>
+                            </div>
+                        </div>
+                        <div class="active-solar">
+                            <h6>solar radiance</h6>
+                            <h3>121<sup>w/sqm</sup></h3>
+                        </div>
+                        <div class="active-time">
+                            <h3>CURRENT 2PM</h3>
+                        </div>
+                    </div>
+                    <div class="hourly-card">
+                        <div class="hourly-icon">
+                            <img src="assets/img/Nighty.png" alt="">
+                        </div>
+                        <div class="hourly-degree">
+                            <h1>30<sup>°</sup></h1>
+                        </div>
+                        <div class="hourly-rain">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>0mm</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-wind">
+                            <div class="fa">
+                                <i class="fa-solid fa-location-arrow"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>15kph</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-humidity">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet-slash"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>61%</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-time">
+                            <h1>3PM</h1>
+                        </div>
+                    </div>
+                    <div class="hourly-card">
+                        <div class="hourly-icon">
+                            <img src="assets/img/Sunny.png" alt="">
+                        </div>
+                        <div class="hourly-degree">
+                            <h1>34<sup>°</sup></h1>
+                        </div>
+                        <div class="hourly-rain">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>0mm</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-wind">
+                            <div class="fa">
+                                <i class="fa-solid fa-location-arrow"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>15kph</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-humidity">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet-slash"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>61%</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-time">
+                            <h1>4PM</h1>
+                        </div>
+                    </div>
+                    <div class="hourly-card">
+                        <div class="hourly-icon">
+                            <img src="assets/img/Nighty.png" alt="">
+                        </div>
+                        <div class="hourly-degree">
+                            <h1>33<sup>°</sup></h1>
+                        </div>
+                        <div class="hourly-rain">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>0mm</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-wind">
+                            <div class="fa">
+                                <i class="fa-solid fa-location-arrow"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>15kph</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-humidity">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet-slash"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>61%</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-time">
+                            <h1>5PM</h1>
+                        </div>
+                    </div>
+                    <div class="hourly-card">
+                        <div class="hourly-icon">
+                            <img src="assets/img/Sunny.png" alt="">
+                        </div>
+                        <div class="hourly-degree">
+                            <h1>31<sup>°</sup></h1>
+                        </div>
+                        <div class="hourly-rain">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>0mm</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-wind">
+                            <div class="fa">
+                                <i class="fa-solid fa-location-arrow"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>15kph</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-humidity">
+                            <div class="fa">
+                                <i class="fa-solid fa-droplet-slash"></i>
+                            </div>
+                            <div class="txt">
+                                <h1>61%</h1>
+                            </div>
+                        </div>
+                        <div class="hourly-time">
+                            <h1>6PM</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="hourly-source">
+                    <h6>*Source: Locally installed KloudTracker</h6>
+                    <h6>**Source: Accuweather</h6>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="modalOverlay" style="display:none;">
+        <div id="modal">
+            <h1>Help Content of KloudTrack</h1>
+            <div class="lists">
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+            </div>
+            <button id="close" type="button">Close</button>
+        </div>
+    </div>
+
+    <div id="modalOverlaySettings" style="display:none;">
+        <div id="modalSettings">
+            <h1>Settings Content of KloudTrack</h1>
+            <div class="lists">
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+                <div class="list">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nobis nisi eaque tempore totam
+                        beatae.</p>
+                </div>
+            </div>
+            <button id="closeSettings" type="button">Close</button>
+        </div>
+    </div>
+
+</body>
+
+<script src="assets/js/sidebar.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/modalSettings.js"></script>
+
+</html>
