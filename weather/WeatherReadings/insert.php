@@ -4,6 +4,7 @@
     require("../classes/dbHandler.php");
 
     $DBHandler_weather = new DBHandler_weather();
+    
 
     $fetchKeyValue = "A197C";
     $key = "";
@@ -13,75 +14,210 @@
     $pressure = "0";
     $light = "0";
     $irradiance = "0";
-    $uvIntensity = "0";
+    $uvIntensity = "";
     $windDirection = "0";
     $windSpeed = "0";
     $rainGuage = "0";
     $waterLevel = "0";
+    $windDirectionValue = "0";
+    $heatindexdata = "";
+    $uvIndex = "";
+    $heatIndexColor = "";
+    
+
+    // adding encryption parameters
+    $cipher = "AES-128-ECB"; // cipher method to be used
+    $option = 0; //
+    $encryption_iv =""; //initialization vector for hashing
+    $encryptionKey ="newkloudTECH2023"; // will be from the device
+
     
     
-    if (isset($_POST['key'])){
+    $PostData = file_get_contents("php://input");
+    $PostData = json_decode($PostData,true);
     
-            $key = $_POST['key'];
+    print_r($PostData);
+
+    
+
+    
+
+    if (isset($PostData['key'])){
+    
+            $key = $PostData['key'];
+          
     }
 
-    if (isset($_POST['loc'])){
+    if (isset($PostData['loc'])){
     
-            $loc = $_POST['loc'];
+            $loc = $PostData['loc'];
+            
     }
     
-    if (isset($_POST['temperature'])) {
+    if (isset($PostData['temperature'])) {
     
-            $temperature = $_POST['temperature'];
+            $temperature = $PostData['temperature'];
+            
   
     } 
     
-    if (isset($_POST['humidity'])) {
+    if (isset($PostData['humidity'])) {
     
-            $humidity = $_POST['humidity'];
+            $humidity = $PostData['humidity'];
+            
     }
     
-    if (isset($_POST['pressure'])) {
+    if (isset($PostData['pressure'])) {
     
-            $pressure = $_POST['pressure'];
+            $pressure = $PostData['pressure'];
+           
     }
     
-    if (isset($_POST['light'])) {
+    if (isset($PostData['light'])) {
     
-            $light = $_POST['light'];
+            $light = $PostData['light'];
+           
     } 
     
     
-    if (isset($_POST['irradiance'])) {
+    if (isset($PostData['irradiance'])) {
     
-            $irradiance = $_POST['irradiance'];
+            $irradiance = $PostData['irradiance'];
+          
     }
 
-    if (isset($_POST['uvIntensity'])) {
+    if (isset($PostData['uvIntensity'])) {
     
-            $uvIntensity = $_POST['uvIntensity'];
+            $uvIntensity = $PostData['uvIntensity'];
+            $uvIntensity = (int)$uvIntensity;
+            
+            
+            if($uvIntensity < 50){
+                $uvIndex = 0;
+
+            } else if($uvIntensity >= 50 && $uvIntensity < 227){
+                $uvIndex = 1;
+
+            } else if($uvIntensity >= 227 && $uvIntensity < 318){
+                $uvIndex = 2;
+
+            }else if($uvIntensity >= 318 && $uvIntensity < 408){
+                $uvIndex = 3;
+
+            }else if($uvIntensity >= 408 && $uvIntensity < 503){
+                $uvIndex = 4;
+
+            }else if($uvIntensity >= 503 && $uvIntensity < 606){
+                $uvIndex = 5;
+
+            }else if($uvIntensity >= 606 && $uvIntensity < 696){
+                $uvIndex = 6;
+
+            }else if($uvIntensity >= 696 && $uvIntensity < 795){
+                $uvIndex = 7;
+
+            }else if($uvIntensity >= 795 && $uvIntensity < 881){
+                $uvIndex = 8;
+
+            }else if($uvIntensity >= 881 && $uvIntensity < 976){
+                $uvIndex = 9;
+
+            }else if($uvIntensity >= 976 && $uvIntensity < 1079){
+                $uvIndex = 10;
+
+            }else if ($uvIntensity >= 1079 && $uvIntensity < 1170){
+                $uvIndex = 11;
+
+            }
+            
+            echo "\n uv index: ".$uvIndex."\n";
+            
+            
+            
+        
     }
 
-    if (isset($_POST['windDirection'])) {
+    if (isset($PostData['windDirection'])) {
     
-            $windDirection = $_POST['windDirection'];
+         
+            
+           $windDirectionValue =  $PostData['windDirection'];
+           
+         
+           $windDirectionValue = (int)$windDirectionValue;
+         
+
+           if($windDirectionValue === 0){
+                $windDirection = "North";
+                
+           } else if($windDirectionValue === 90){
+                $windDirection = "East";
+
+           }else if($windDirectionValue === 180){
+                $windDirection = "South";
+
+           }else if($windDirectionValue === 270){
+                $windDirection = "West";
+
+           }else if($windDirectionValue > 0 && $windDirectionValue < 90){
+                $windDirection = "North East";
+
+           }else if($windDirectionValue > 90 && $windDirectionValue < 180){
+                $windDirection = "South East";
+
+           }else if($windDirectionValue > 180 && $windDirectionValue < 270){
+                $windDirection = "South West";
+
+           }else if($windDirectionValue > 270 && $windDirectionValue < 360){
+                $windDirection = "North West";
+
+           } else {
+                $windDirection = "Invalid Value";
+           }
+           
     }
 
-    if (isset($_POST['windSpeed'])) {
+    if (isset($PostData['windSpeed'])) {
     
-            $windSpeed = $_POST['windSpeed'];
+            $windSpeed = $PostData['windSpeed'];
+            
     }
 
-    if (isset($_POST['rainGauge'])) {
+    if (isset($PostData['rainGauge'])) {
     
-            $rainGuage = $_POST['rainGauge'];
+            $rainGuage = $PostData['rainGauge'];
+            
     }
 
-    if (isset($_POST['waterLevel'])) {
+    if (isset($PostData['waterLevel'])) {
     
-            $waterLevel = $_POST['waterLevel'];
+            $waterLevel = $PostData['waterLevel'];
+           
+            
     }
+    
+    
+    if(isset($PostData['heatindexdata'])){
+          $heatindexdata = $PostData['heatindexdata'];
+          echo "heatindex: ".$heatindexdata."\n";
+          
+          
+          $heatindexdata = (int)$heatindexdata;
+          
+          if($heatindexdata >=18 && $heatindexdata <= 26){
+                $heatIndexColor = "cyan";
+          } else if($heatindexdata >=27 && $heatindexdata <= 31){
+                $heatIndexColor = "green";
+          } else if($heatindexdata >=32 && $heatindexdata <= 51){
+                $heatIndexColor = "yellow";
+          } else if($heatindexdata >=52 && $heatindexdata <= 66){
+                $heatIndexColor = "red";
+          }
+          
+          
+          echo "\n heat index color: ".$heatIndexColor."\n";
 
+    }
     
     
     
@@ -92,13 +228,28 @@
      
       
       $currentdatetime = date("Y-m-d H:i:s");
+      $time = date('h:i', strtotime($currentdatetime));
       
-      $query = mysqli_escape_string($DBHandler_weather->call_connection(),"INSERT INTO tbl_balanga(record_id, record_barangay, record_dateTime, record_temperature , record_humidity , record_airPressure, record_light , record_irradiance, record_uvIntensity, record_windSpeed, record_windDirection, record_rainGauge, record_waterLevel ) VALUES(0, '$loc','$currentdatetime', '$temperature', '$humidity','$pressure','$light' , '$irradiance','$uvIntensity','$windSpeed','$windDirection','$rainGuage','$waterLevel');");
-      $DBHandler_weather->runInsertQuery($query);
+  
       
+      $result = $DBHandler_weather->addRecord($loc,$currentdatetime,$temperature,$humidity,$pressure,$light,$irradiance,$uvIntensity,$windSpeed,$windDirection,$rainGuage,$waterLevel,$windDirectionValue,$heatindexdata,$uvIndex,$heatIndexColor,$time);
+      
+      
+      if($result){
+          
+            echo "Data Saved!";
+            
+      }else{
+          
+          echo "Failed to save, something went wrong..";
+          
+      }
       
 
        
+    }else{
+      
+        echo"Security key not valid";
     }
     
     

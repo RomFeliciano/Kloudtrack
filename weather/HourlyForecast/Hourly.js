@@ -17,7 +17,7 @@
      }).then(data => {
 
             console.log("fetched from api");
-            setDataToCards(data);
+            setDataToCardsFromAPI(data);
             localStorage.setItem('forecastString',JSON.stringify(data));
             console.log(data);
             
@@ -36,12 +36,16 @@
     
 }
 
-//fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
+
 
 function setDataToCards(data) {
+    console.log("setDataToCards()");
+
     var data = data;
     var currentTime = new Date().getHours();
-    var startingPoint;
+    console.log("setdatatocards time " + currentTime);
+    
+    let startingPoint = "";
 
  
 
@@ -54,21 +58,39 @@ function setDataToCards(data) {
     var hourlyiconimg = document.getElementsByClassName('hourly-icon-img');
    
 
+
     
-    for (var j = 0; j < data.length; j++){
+    for (var j = 0; j <data.length; j++){
 
         var time = new Date(data[j].DateTime).getHours();
-       // var time = time.getHours();
+        
+  
 
-        if (time === currentTime) {
-            startingPoint = j;
+        console.log("TIME: " + j + " - "+time);
+
+        if (Number(time) === Number(currentTime)) {
+            startingPoint = j + 1;
+           
+           
+            
         } else {
-            startingPoint = 0;
+            //startingPoint = "";
+  
         }
 
         
     }
+
+    console.log("starting point: " + startingPoint);
+
+    if (startingPoint === "") {
+        setDataToCardsFromAPI(data);
+        return;
+    }
+
+    //console.log("starting point: " + startingPoint);
     
+    console.log("current time: "+currentTime);
     
     
 
@@ -107,7 +129,7 @@ function setDataToCards(data) {
 
         forecasttime = forecasttime + "" + timeperiod;
 
-        console.log(i + ": " + data[i].Temperature.Value);
+        //console.log(i + ": " + data[i].Temperature.Value);
 
         hourlyTemperature[cardNumber].innerText = data[startingPoint].Temperature.Value;
         hourlyRainText[cardNumber].innerText = data[startingPoint].Rain.Value;
@@ -130,10 +152,85 @@ function setDataToCards(data) {
 }
 
 
+
+function startingPointfount(startingPoint) {
+    var startingPoint = startingPoint;
+
+    
+    
+}
+
+
+
+function setDataToCardsFromAPI(data) {
+    var data = data;
+    
+ 
+
+    // get elements
+    var hourlyTemperature = document.getElementsByClassName('hourlyTemperature');
+    var hourlyRainText = document.getElementsByClassName('hourlyRainText');
+    var hourlyWindText = document.getElementsByClassName('hourlyWindText');
+    var hourlyHumidityText = document.getElementsByClassName('hourlyHumidityText');
+    var hourlyTime = document.getElementsByClassName('hourlyTime');
+    var hourlyiconimg = document.getElementsByClassName('hourly-icon-img');
+   
+
+
+
+
+    var cardNumber = 2;
+    
+    for (var i = 0; i < 4; i++){
+
+       
+
+        // for date
+        var forecastdate = new Date(data[i].DateTime);
+        var forecasttime = forecastdate.getHours();
+        
+        if (forecasttime >= 12) {
+            var timeperiod = "PM";
+        } else {
+            var timeperiod = "AM";
+        }
+
+        forecasttime = forecastdate.getHours() % 12;
+
+        if (forecasttime === 0) {
+            forecasttime = 12;
+        }
+
+        forecasttime = forecasttime + "" + timeperiod;
+
+       // console.log(i + ": " + data[i].Temperature.Value);
+
+        hourlyTemperature[cardNumber].innerText = data[i].Temperature.Value;
+        hourlyRainText[cardNumber].innerText = data[i].Rain.Value;
+        hourlyWindText[cardNumber].innerText = data[i].Wind.Speed.Value;
+        hourlyHumidityText[cardNumber].innerText = data[i].RainProbability;
+        hourlyTime[cardNumber].innerText = forecasttime;
+        hourlyiconimg[cardNumber]
+
+
+        cardNumber++;
+      
+
+       
+
+        
+        
+
+
+    }
+}
+
+
 function checkLocalStorage() {
     var currentdate = new Date(); 
     var currenttime = currentdate.getHours();
-    var currentday = currentdate.getDay;
+
+
     console.log(currenttime);
 
 
@@ -143,6 +240,8 @@ function checkLocalStorage() {
         
 
     } else if (localStorage.getItem('forecastString') != null) {
+
+        /*
 
         var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour12: 'numeric' };
         
@@ -167,48 +266,16 @@ function checkLocalStorage() {
 
         forecastLastDate = new Date(forecastString[11].DateTime);
         forecastLastDay = forecastLastDate.getDay();
+        */
         
+        
+        forecastString = localStorage.getItem('forecastString');
+        forecastString = JSON.parse(forecastString);
         console.log("getting from local json");
         console.log(forecastString);
         setDataToCards(forecastString);
 
-        //fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
-
-        /*
-        if (Number(currenttime) >= Number(forecastLastTime)) {
-            console.log("currenttime >= forecastLastTime");
-            fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
-
-        } else if (Number(currenttime) === Number(forecastFirstTime)) {
-            console.log("using local stored json");
-            dothis(forecastString);
-            
-        } else if ((Number(currenttime) +1) < Number(forecastFirstTime)) {
-
-            console.log("currenttime < forecastFirstTime");
-            fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
-
-            
-        } else if (Number(currenttime) === 24) { 
-            
-            console.log("dawn of a new day");
-            fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
-
-        }  else if (Number(forecastLastTime) === 0 || Number(currenttime) === forecastLastTime) { 
-            
-
-            if(Number(forecastLastDay) != Number(currentday)){}
-            console.log("dawn of a new day");
-            fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
-
-        } else {
-
-            console.log("using local stored json");
-            dothis(forecastString);
-            
-        }
-        */
-        
+  
         
         
 
@@ -259,7 +326,42 @@ function checkTime() {
 }
 
 
-// checks if time has changed every second
-//setInterval(checkTime, 1000);
-//checkLocalStorage();
+
+function checkDate() {
+
+    
+    var currentdate = new Date(); 
+  
+    console.log("Day check: " + currentdate);
+
+
+    //var currenttime = 12;
+
+    if (localStorage.getItem('kloudtrackLastReadDate') === null || localStorage.getItem('kloudtrackLastReadDate') === "") {
+
+            localStorage.setItem('kloudtrackLastReadDate', currentdate);
+            fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
+
+
+    } else {
+        
+        var lastReadDate = localStorage.getItem('kloudtrackLastReadDate');
+
+        if (currentdate != lastReadDate) {
+
+            localStorage.setItem('kloudtrackLastReadDate', currentdate);
+            fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
+
+        } else {
+            checkLocalStorage();
+            
+        }
+
+    }
+
+    
+}
+
+checkDate();
 checkTime();
+
