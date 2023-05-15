@@ -21,11 +21,11 @@
             localStorage.setItem('forecastString',JSON.stringify(data));
             console.log(data);
             
-             return data
+            return data
 
      }).catch(error => {
 
-             console.log(error);
+             console.log(error)
         
              return error
 
@@ -100,7 +100,7 @@ function setDataToCards(data) {
 
     if (howmanyleft < 4) {
 
-        fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
+        fetchHourlyForecasts('osVssGlJUK7gpepKrjUjI8VZO95qqqce', '3406456');
         return 0;
     }
 
@@ -236,7 +236,7 @@ function checkLocalStorage() {
 
     if (localStorage.getItem('forecastString') === null || localStorage.getItem('forecastString') === "") {
 
-        fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
+        fetchHourlyForecasts('osVssGlJUK7gpepKrjUjI8VZO95qqqce', '3406456');
         
 
     } else if (localStorage.getItem('forecastString') != null) {
@@ -340,7 +340,7 @@ function checkDate() {
     if (localStorage.getItem('kloudtrackLastReadDate') === null || localStorage.getItem('kloudtrackLastReadDate') === "") {
 
             localStorage.setItem('kloudtrackLastReadDate', currentdate);
-            fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
+            fetchHourlyForecasts('osVssGlJUK7gpepKrjUjI8VZO95qqqce', '3406456');
 
 
     } else {
@@ -350,7 +350,7 @@ function checkDate() {
         if (currentdate != lastReadDate) {
 
             localStorage.setItem('kloudtrackLastReadDate', currentdate);
-            fetchHourlyForecasts('UzqdktCunQjzEF1WCdMVd9NcfotoVYIQ', '3406456');
+            fetchHourlyForecasts('osVssGlJUK7gpepKrjUjI8VZO95qqqce', '3406456');
 
         } else {
             checkLocalStorage();

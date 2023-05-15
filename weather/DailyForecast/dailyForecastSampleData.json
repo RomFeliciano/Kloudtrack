@@ -1,0 +1,1318 @@
+{
+    "Headline": {
+        "EffectiveDate": "2023-05-15T07:00:00+08:00",
+        "EffectiveEpochDate": 1684105200,
+        "Severity": 5,
+        "Text": "A thunderstorm Monday morning",
+        "Category": "thunderstorm",
+        "EndDate": "2023-05-15T13:00:00+08:00",
+        "EndEpochDate": 1684126800,
+        "MobileLink": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?unit=c&lang=en-us"
+    },
+    "DailyForecasts": [
+        {
+            "Date": "2023-05-15T07:00:00+08:00",
+            "EpochDate": 1684105200,
+            "Sun": {
+                "Rise": "2023-05-15T05:30:00+08:00",
+                "EpochRise": 1684099800,
+                "Set": "2023-05-15T18:18:00+08:00",
+                "EpochSet": 1684145880
+            },
+            "Moon": {
+                "Rise": "2023-05-15T02:12:00+08:00",
+                "EpochRise": 1684087920,
+                "Set": "2023-05-15T14:24:00+08:00",
+                "EpochSet": 1684131840,
+                "Phase": "WaningCrescent",
+                "Age": 25
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 25.2,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 34.2,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": 30.1,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Warm"
+                },
+                "Maximum": {
+                    "Value": 41.4,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": ""
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": 30.1,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Warm"
+                },
+                "Maximum": {
+                    "Value": 38.4,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Hot"
+                }
+            },
+            "HoursOfSun": 1,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 0,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 12,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [
+                {
+                    "Name": "AirQuality",
+                    "Value": 0,
+                    "Category": "Good",
+                    "CategoryValue": 1,
+                    "Type": "Ozone"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 6,
+                    "Category": "High",
+                    "CategoryValue": 3
+                }
+            ],
+            "Day": {
+                "Icon": 16,
+                "IconPhrase": "Mostly cloudy w/ t-storms",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Moderate",
+                "ShortPhrase": "Some brightening",
+                "LongPhrase": "Clouds followed by a brightening sky",
+                "PrecipitationProbability": 45,
+                "ThunderstormProbability": 27,
+                "RainProbability": 45,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 11.1,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 140,
+                        "Localized": "SE",
+                        "English": "SE"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 31.5,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 261,
+                        "Localized": "W",
+                        "English": "W"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 3.4,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 3.4,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 1,
+                "HoursOfRain": 1,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 98,
+                "Evapotranspiration": {
+                    "Value": 3,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "SolarIrradiance": {
+                    "Value": 785.2,
+                    "Unit": "W/m²",
+                    "UnitType": 33
+                }
+            },
+            "Night": {
+                "Icon": 42,
+                "IconPhrase": "Mostly cloudy w/ t-storms",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Light",
+                "ShortPhrase": "A thunderstorm around late",
+                "LongPhrase": "Increasing clouds with a thunderstorm in spots late",
+                "PrecipitationProbability": 40,
+                "ThunderstormProbability": 24,
+                "RainProbability": 40,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 7.4,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 300,
+                        "Localized": "WNW",
+                        "English": "WNW"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 27.8,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 260,
+                        "Localized": "W",
+                        "English": "W"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 1,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 1,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 0.5,
+                "HoursOfRain": 0.5,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 99,
+                "Evapotranspiration": {
+                    "Value": 0.3,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "SolarIrradiance": {
+                    "Value": 10.2,
+                    "Unit": "W/m²",
+                    "UnitType": 33
+                }
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?day=1&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?day=1&unit=c&lang=en-us"
+        },
+        {
+            "Date": "2023-05-16T07:00:00+08:00",
+            "EpochDate": 1684191600,
+            "Sun": {
+                "Rise": "2023-05-16T05:30:00+08:00",
+                "EpochRise": 1684186200,
+                "Set": "2023-05-16T18:19:00+08:00",
+                "EpochSet": 1684232340
+            },
+            "Moon": {
+                "Rise": "2023-05-16T02:52:00+08:00",
+                "EpochRise": 1684176720,
+                "Set": "2023-05-16T15:18:00+08:00",
+                "EpochSet": 1684221480,
+                "Phase": "WaningCrescent",
+                "Age": 26
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 25.4,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 33.3,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": 29.8,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Warm"
+                },
+                "Maximum": {
+                    "Value": 41.8,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Dangerous Heat"
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": 29.8,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Warm"
+                },
+                "Maximum": {
+                    "Value": 38.3,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Hot"
+                }
+            },
+            "HoursOfSun": 1.2,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 0,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 11,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [
+                {
+                    "Name": "AirQuality",
+                    "Value": 0,
+                    "Category": "Good",
+                    "CategoryValue": 1,
+                    "Type": "Ozone"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 7,
+                    "Category": "High",
+                    "CategoryValue": 3
+                }
+            ],
+            "Day": {
+                "Icon": 15,
+                "IconPhrase": "Thunderstorms",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Light",
+                "ShortPhrase": "Cloudy, a couple of t-storms",
+                "LongPhrase": "Cloudy with a couple of thunderstorms, especially late in the day",
+                "PrecipitationProbability": 78,
+                "ThunderstormProbability": 47,
+                "RainProbability": 78,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 11.1,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 154,
+                        "Localized": "SSE",
+                        "English": "SSE"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 29.6,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 264,
+                        "Localized": "W",
+                        "English": "W"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 4.7,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 4.7,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 2.5,
+                "HoursOfRain": 2.5,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 96,
+                "Evapotranspiration": {
+                    "Value": 2.8,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "SolarIrradiance": {
+                    "Value": 1493.9,
+                    "Unit": "W/m²",
+                    "UnitType": 33
+                }
+            },
+            "Night": {
+                "Icon": 38,
+                "IconPhrase": "Mostly cloudy",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Light",
+                "ShortPhrase": "A thunderstorm in spots late",
+                "LongPhrase": "Partly to mostly cloudy with a thunderstorm in spots late",
+                "PrecipitationProbability": 40,
+                "ThunderstormProbability": 24,
+                "RainProbability": 40,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 7.4,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 265,
+                        "Localized": "W",
+                        "English": "W"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 24.1,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 252,
+                        "Localized": "WSW",
+                        "English": "WSW"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 1,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 1,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 0.5,
+                "HoursOfRain": 0.5,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 96,
+                "Evapotranspiration": {
+                    "Value": 0.3,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "SolarIrradiance": {
+                    "Value": 7.5,
+                    "Unit": "W/m²",
+                    "UnitType": 33
+                }
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?day=2&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?day=2&unit=c&lang=en-us"
+        },
+        {
+            "Date": "2023-05-17T07:00:00+08:00",
+            "EpochDate": 1684278000,
+            "Sun": {
+                "Rise": "2023-05-17T05:30:00+08:00",
+                "EpochRise": 1684272600,
+                "Set": "2023-05-17T18:19:00+08:00",
+                "EpochSet": 1684318740
+            },
+            "Moon": {
+                "Rise": "2023-05-17T03:32:00+08:00",
+                "EpochRise": 1684265520,
+                "Set": "2023-05-17T16:12:00+08:00",
+                "EpochSet": 1684311120,
+                "Phase": "WaningCrescent",
+                "Age": 27
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 25.6,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 32.7,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": 30.7,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Warm"
+                },
+                "Maximum": {
+                    "Value": 42,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Dangerous Heat"
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": 30.7,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Warm"
+                },
+                "Maximum": {
+                    "Value": 38,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Hot"
+                }
+            },
+            "HoursOfSun": 1,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 0,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 11,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [
+                {
+                    "Name": "AirQuality",
+                    "Value": 0,
+                    "Category": "Good",
+                    "CategoryValue": 1,
+                    "Type": "Ozone"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 6,
+                    "Category": "High",
+                    "CategoryValue": 3
+                }
+            ],
+            "Day": {
+                "Icon": 15,
+                "IconPhrase": "Thunderstorms",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Moderate",
+                "ShortPhrase": "A morning thunderstorm or two",
+                "LongPhrase": "Cloudy; a couple of thunderstorms in the morning followed by occasional rain and a thunderstorm in the afternoon",
+                "PrecipitationProbability": 87,
+                "ThunderstormProbability": 52,
+                "RainProbability": 87,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 9.3,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 335,
+                        "Localized": "NNW",
+                        "English": "NNW"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 29.6,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 245,
+                        "Localized": "WSW",
+                        "English": "WSW"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 7.6,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 7.6,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 4,
+                "HoursOfRain": 4,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 98,
+                "Evapotranspiration": {
+                    "Value": 2.5,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "SolarIrradiance": {
+                    "Value": 957.6,
+                    "Unit": "W/m²",
+                    "UnitType": 33
+                }
+            },
+            "Night": {
+                "Icon": 38,
+                "IconPhrase": "Mostly cloudy",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Light",
+                "ShortPhrase": "A thunderstorm in spots late",
+                "LongPhrase": "Partly to mostly cloudy with a thunderstorm in spots late",
+                "PrecipitationProbability": 40,
+                "ThunderstormProbability": 24,
+                "RainProbability": 40,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 7.4,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 20,
+                        "Localized": "NNE",
+                        "English": "NNE"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 20.4,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 18,
+                        "Localized": "NNE",
+                        "English": "NNE"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 1,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 1,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 0.5,
+                "HoursOfRain": 0.5,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 99,
+                "Evapotranspiration": {
+                    "Value": 0.3,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "SolarIrradiance": {
+                    "Value": 7.5,
+                    "Unit": "W/m²",
+                    "UnitType": 33
+                }
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?day=3&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?day=3&unit=c&lang=en-us"
+        },
+        {
+            "Date": "2023-05-18T07:00:00+08:00",
+            "EpochDate": 1684364400,
+            "Sun": {
+                "Rise": "2023-05-18T05:29:00+08:00",
+                "EpochRise": 1684358940,
+                "Set": "2023-05-18T18:19:00+08:00",
+                "EpochSet": 1684405140
+            },
+            "Moon": {
+                "Rise": "2023-05-18T04:12:00+08:00",
+                "EpochRise": 1684354320,
+                "Set": "2023-05-18T17:07:00+08:00",
+                "EpochSet": 1684400820,
+                "Phase": "WaningCrescent",
+                "Age": 29
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 25.1,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 33.4,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": 28.8,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Warm"
+                },
+                "Maximum": {
+                    "Value": 43.6,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Dangerous Heat"
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": 28.8,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Warm"
+                },
+                "Maximum": {
+                    "Value": 40.1,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Hot"
+                }
+            },
+            "HoursOfSun": 0.8,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 0,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 11,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [
+                {
+                    "Name": "AirQuality",
+                    "Value": 0,
+                    "Category": "Good",
+                    "CategoryValue": 1,
+                    "Type": "Ozone"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 5,
+                    "Category": "Moderate",
+                    "CategoryValue": 2
+                }
+            ],
+            "Day": {
+                "Icon": 15,
+                "IconPhrase": "Thunderstorms",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Moderate",
+                "ShortPhrase": "Cloudy with thunderstorms",
+                "LongPhrase": "Cloudy with thunderstorms",
+                "PrecipitationProbability": 91,
+                "ThunderstormProbability": 55,
+                "RainProbability": 91,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 9.3,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 173,
+                        "Localized": "S",
+                        "English": "S"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 24.1,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 106,
+                        "Localized": "ESE",
+                        "English": "ESE"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 8.5,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 8.5,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 4,
+                "HoursOfRain": 4,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 99,
+                "Evapotranspiration": {
+                    "Value": 2.5,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "SolarIrradiance": {
+                    "Value": 445.1,
+                    "Unit": "W/m²",
+                    "UnitType": 33
+                }
+            },
+            "Night": {
+                "Icon": 42,
+                "IconPhrase": "Mostly cloudy w/ t-storms",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Moderate",
+                "ShortPhrase": "A couple of t-storms late",
+                "LongPhrase": "Partly to mostly cloudy with a couple of thunderstorms late",
+                "PrecipitationProbability": 65,
+                "ThunderstormProbability": 39,
+                "RainProbability": 65,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 5.6,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 246,
+                        "Localized": "WSW",
+                        "English": "WSW"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 20.4,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 240,
+                        "Localized": "WSW",
+                        "English": "WSW"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 2.5,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 2.5,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 1,
+                "HoursOfRain": 1,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 99,
+                "Evapotranspiration": {
+                    "Value": 0.3,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "SolarIrradiance": {
+                    "Value": 10.5,
+                    "Unit": "W/m²",
+                    "UnitType": 33
+                }
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?day=4&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?day=4&unit=c&lang=en-us"
+        },
+        {
+            "Date": "2023-05-19T07:00:00+08:00",
+            "EpochDate": 1684450800,
+            "Sun": {
+                "Rise": "2023-05-19T05:29:00+08:00",
+                "EpochRise": 1684445340,
+                "Set": "2023-05-19T18:20:00+08:00",
+                "EpochSet": 1684491600
+            },
+            "Moon": {
+                "Rise": "2023-05-19T04:54:00+08:00",
+                "EpochRise": 1684443240,
+                "Set": "2023-05-19T18:03:00+08:00",
+                "EpochSet": 1684490580,
+                "Phase": "New",
+                "Age": 0
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 24.9,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 33.1,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": 30,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Warm"
+                },
+                "Maximum": {
+                    "Value": 40.1,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Hot"
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": 30,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Warm"
+                },
+                "Maximum": {
+                    "Value": 38.4,
+                    "Unit": "C",
+                    "UnitType": 17,
+                    "Phrase": "Very Hot"
+                }
+            },
+            "HoursOfSun": 0.9,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 0,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 11,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [
+                {
+                    "Name": "AirQuality",
+                    "Value": 0,
+                    "Category": "Good",
+                    "CategoryValue": 1,
+                    "Type": "Ozone"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Low",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 4,
+                    "Category": "Moderate",
+                    "CategoryValue": 2
+                }
+            ],
+            "Day": {
+                "Icon": 7,
+                "IconPhrase": "Cloudy",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Heavy",
+                "ShortPhrase": "A stray a.m. t-storm; cloudy",
+                "LongPhrase": "Widely separated morning thunderstorms; otherwise, cloudy",
+                "PrecipitationProbability": 55,
+                "ThunderstormProbability": 33,
+                "RainProbability": 55,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 11.1,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 161,
+                        "Localized": "SSE",
+                        "English": "SSE"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 25.9,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 247,
+                        "Localized": "WSW",
+                        "English": "WSW"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 10.7,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 10.7,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 2,
+                "HoursOfRain": 2,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 99,
+                "Evapotranspiration": {
+                    "Value": 2.8,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "SolarIrradiance": {
+                    "Value": 622,
+                    "Unit": "W/m²",
+                    "UnitType": 33
+                }
+            },
+            "Night": {
+                "Icon": 7,
+                "IconPhrase": "Cloudy",
+                "HasPrecipitation": false,
+                "ShortPhrase": "Overcast",
+                "LongPhrase": "Overcast",
+                "PrecipitationProbability": 25,
+                "ThunderstormProbability": 6,
+                "RainProbability": 25,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 7.4,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 341,
+                        "Localized": "NNW",
+                        "English": "NNW"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 20.4,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 247,
+                        "Localized": "WSW",
+                        "English": "WSW"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 0,
+                "HoursOfRain": 0,
+                "HoursOfSnow": 0,
+                "HoursOfIce": 0,
+                "CloudCover": 97,
+                "Evapotranspiration": {
+                    "Value": 0.3,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "SolarIrradiance": {
+                    "Value": 10.6,
+                    "Unit": "W/m²",
+                    "UnitType": 33
+                }
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?day=5&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/ph/tenejero/3406456/daily-weather-forecast/3406456?day=5&unit=c&lang=en-us"
+        }
+    ]
+}
